@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="e24344cd-a613-4c0c-ae2a-4af2f37eab39"
+mode="Global"
+rxversion="7.2">
+	<name>
+		Recording1
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="sol_git_jen">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="a7938fa4-873c-4ffa-bbdc-76d68facccce"
+	name="sol_git_jenRepository"
+	relativepath="sol-git-jenRepository.rxrep"
+	rxversion="7.2">
+		<codegen
+		classname="sol_git_jenRepository"
+		namespace="sol_git_jen">
+		</codegen>
+		<rootfolder
+		id="ddb19f9e-7fd9-486c-bfc0-cdcc0c7df752"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

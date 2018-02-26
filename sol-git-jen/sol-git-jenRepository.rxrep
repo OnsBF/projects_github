@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="sol-git-jenRepository"
+id="a7938fa4-873c-4ffa-bbdc-76d68facccce"
+rxversion="7.2">
+  <codegen
+  classname="sol-git-jenRepository"
+  namespace="sol_git_jen"/>
+  <rootfolder
+  name="Root"
+  id="ddb19f9e-7fd9-486c-bfc0-cdcc0c7df752"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>

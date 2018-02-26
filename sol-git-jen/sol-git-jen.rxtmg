@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="7.2">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="sol-git-jen"
+      id="9365eaea-a5d8-4d29-8c4f-d9a06abf9a6a"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="sol-git-jen"
+      id="9365eaea-a5d8-4d29-8c4f-d9a06abf9a6a"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

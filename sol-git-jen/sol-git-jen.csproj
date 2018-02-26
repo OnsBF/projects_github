@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{3751F238-46C8-4987-A31B-E02D2FCC9B21}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>sol_git_jen</RootNamespace>
+    <AssemblyName>sol-git-jen</AssemblyName>
+    <RanorexVersion>7.2</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>477d019d-49ea-4dd6-ab46-15da0bdc2e5f</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.FirefoxWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>893d445c-ceb5-4046-b740-1176c468b217</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>61d9bb0a-efcc-4351-86da-213947d55dd2</id>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>89324517-6250-4d80-9d0d-9d65d5b8198c</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>df3f7447-3569-49a8-9545-32b3881c1134</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>89324517-6250-4d80-9d0d-9d65d5b8198c</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>be24ce08-e81c-4689-a881-8c1725da697c</id>
+    </Compile>
+    <Compile Include="sol-git-jenRepository.cs">
+      <BoundTo>477d019d-49ea-4dd6-ab46-15da0bdc2e5f</BoundTo>
+      <DependentUpon>sol-git-jenRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>1c8a504c-653b-463f-8daf-6e7980f690a7</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>c4fca0a5-91ed-433a-9bfe-4aa0b1b1dcdd</id>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>477d019d-49ea-4dd6-ab46-15da0bdc2e5f</BoundTo>
+      <id>89324517-6250-4d80-9d0d-9d65d5b8198c</id>
+      <recordtableid>e24344cd-a613-4c0c-ae2a-4af2f37eab39</recordtableid>
+    </None>
+    <None Include="sol-git-jenRepository.rximg">
+      <BoundTo>477d019d-49ea-4dd6-ab46-15da0bdc2e5f</BoundTo>
+      <DependentUpon>sol-git-jenRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>056d5f89-7ddc-41a0-bd46-b66a238e4fd2</id>
+    </None>
+    <None Include="sol-git-jenRepository.rxrep">
+      <id>477d019d-49ea-4dd6-ab46-15da0bdc2e5f</id>
+      <repoid>a7938fa4-873c-4ffa-bbdc-76d68facccce</repoid>
+      <reporootid>ddb19f9e-7fd9-486c-bfc0-cdcc0c7df752</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sol-git-jen.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>80af0852-b84f-47e8-9b49-2f71e2a36ceb</id>
+    </Content>
+    <Content Include="sol-git-jen.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>78994a4b-8bd1-40ba-ba1e-b31424a1af11</id>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>
