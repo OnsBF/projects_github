@@ -79,6 +79,14 @@ namespace sol_git_jen
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Program Files (x86)\\KeePass Password Safe 2\\KeePass.exe' with arguments '' in normal mode.", new RecordItemIndex(0));
+            Host.Local.RunApplication("C:\\Program Files (x86)\\KeePass Password Safe 2\\KeePass.exe", "", "C:\\Program Files (x86)\\KeePass Password Safe 2", false);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KeyPromptForm' at 406;9.", repo.KeyPromptForm.SelfInfo, new RecordItemIndex(1));
+            repo.KeyPromptForm.Self.Click("406;9");
+            Delay.Milliseconds(200);
+            
         }
 
 #region Image Feature Data

@@ -27,6 +27,7 @@ namespace sol_git_jen
     public partial class sol_git_jenRepository : RepoGenBaseFolder
     {
         static sol_git_jenRepository instance = new sol_git_jenRepository();
+        sol_git_jenRepositoryFolders.KeyPromptFormAppFolder _keypromptform;
 
         /// <summary>
         /// Gets the singleton class instance representing the sol_git_jenRepository element repository.
@@ -43,6 +44,7 @@ namespace sol_git_jen
         public sol_git_jenRepository() 
             : base("sol_git_jenRepository", "/", null, 0, false, "ddb19f9e-7fd9-486c-bfc0-cdcc0c7df752", ".\\RepositoryImages\\sol_git_jenRepositoryddb19f9e.rximgres")
         {
+            _keypromptform = new sol_git_jenRepositoryFolders.KeyPromptFormAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +62,15 @@ namespace sol_git_jen
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The KeyPromptForm folder.
+        /// </summary>
+        [RepositoryFolder("7ed300b3-67ab-49e7-96a3-cc8504231e21")]
+        public virtual sol_git_jenRepositoryFolders.KeyPromptFormAppFolder KeyPromptForm
+        {
+            get { return _keypromptform; }
+        }
     }
 
     /// <summary>
@@ -68,6 +79,46 @@ namespace sol_git_jen
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.2")]
     public partial class sol_git_jenRepositoryFolders
     {
+        /// <summary>
+        /// The KeyPromptFormAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("7ed300b3-67ab-49e7-96a3-cc8504231e21")]
+        public partial class KeyPromptFormAppFolder : RepoGenBaseFolder
+        {
+
+            /// <summary>
+            /// Creates a new KeyPromptForm  folder.
+            /// </summary>
+            public KeyPromptFormAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("KeyPromptForm", "/form[@controlname='KeyPromptForm']", parentFolder, 30000, null, true, "7ed300b3-67ab-49e7-96a3-cc8504231e21", "")
+            {
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("7ed300b3-67ab-49e7-96a3-cc8504231e21")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("7ed300b3-67ab-49e7-96a3-cc8504231e21")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }
